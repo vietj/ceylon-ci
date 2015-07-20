@@ -14,7 +14,7 @@ BUILD_DIR=`pwd`/build
 rm -rf $BUILD_DIR
 mkdir $BUILD_DIR
 mkdir $BUILD_DIR/ceylon
-cp -r ceylon-dist/dist $BUILD_DIR/ceylon
+cp -r ceylon-dist/dist/* $BUILD_DIR/ceylon
 mkdir $BUILD_DIR/.ceylon
 mkdir $BUILD_DIR/.ceylon/repo
 cp -r repo $BUILD_DIR/.ceylon/repo

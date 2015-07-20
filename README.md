@@ -30,3 +30,16 @@ Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/build/repo.tgz in your
 
 Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/build/eclipse-site.tgz somewhere and use this directory
 as Eclipse update source, it provides the Ceylon plugin
+
+## Building yourself
+
+Prerequisites
+
+- `Ant`, `Maven` and `eclipse` available in your path
+- a Java 7 distribution
+
+```
+> git submodule init
+> git submodule update --remote
+> sh build.sh
+```
