@@ -3,7 +3,7 @@ then
     echo "Eclipse already downloaded"
 else
     echo "Downloading Eclipse"
-    curl -o eclipse.tgz --remote-name http://mirrors.ibiblio.org/eclipse/technology/epp/downloads/release/kepler/SR2/eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz
+    curl -s -o eclipse.tgz --remote-name http://mirrors.ibiblio.org/eclipse/technology/epp/downloads/release/kepler/SR2/eclipse-standard-kepler-SR2-linux-gtk-x86_64.tar.gz
 fi
 if [ -f eclipse ];
 then
