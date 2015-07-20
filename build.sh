@@ -14,7 +14,7 @@ else
     echo "Unzipping Eclipse"
     tar -xvzf eclipse.tgz
 fi
-$ECLIPSE_PATH=`pwd`/eclipse
+ECLIPSE_PATH=`pwd`/eclipse
 PATH=$ECLIPSE_PATH:$PATH
 (cd ceylon-dist;ant setup clean publish-all ide-quick)
 (cd ceylon-sdk;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH)
