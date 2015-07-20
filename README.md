@@ -16,7 +16,7 @@ Builds every day:
 
 That's the base Ceylon distrib
 
-Unpack https://vietj.ci.cloudbees.com/job/ceylon-full/ws/build/ceylon-dist.tgz somewhere and add the unpacked
+Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/build/ceylon-dist.tgz somewhere and add the unpacked
 bin directory to your path
 
 ### Ceylon SDK
@@ -24,9 +24,9 @@ bin directory to your path
 Normally these are downloaded from a repository, however there is no repository for the master, so you need
 to unpack the repo in your `~.ceylon/repo` directory.
 
-Unpack https://vietj.ci.cloudbees.com/job/ceylon-full/ws/build/repo.tgz in your home directly
+Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/build/repo.tgz in your home directly
 
 ### Ceylon Eclipse IDE plugin
 
-Unpack https://vietj.ci.cloudbees.com/job/ceylon-full/ws/build/eclipse-site.tgz somewhere and use this directory
+Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/build/eclipse-site.tgz somewhere and use this directory
 as Eclipse update source, it provides the Ceylon plugin
