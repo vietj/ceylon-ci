@@ -29,7 +29,8 @@ Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/build/repo.tgz in your
 ### Ceylon Eclipse IDE plugin
 
 Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/build/eclipse-site.tgz somewhere and use this directory
-as Eclipse update source, it provides the Ceylon plugin
+as Eclipse update source, it provides the Ceylon plugin. Alternatively you can use this URL :
+https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/ceylon-ide-eclipse/site/target/repository/
 
 ## Building yourself
 
