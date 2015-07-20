@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 # Build
 CEYLON_PATH=`pwd`/ceylon-dist/dist/bin
 CEYLON_REPO=`pwd`/repo
