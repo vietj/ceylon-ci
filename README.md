@@ -22,7 +22,7 @@ bin directory to your path
 ### Ceylon SDK
 
 Normally these are downloaded from a repository, however there is no repository for the master, so you need
-to unpack the repo in your `~.ceylon/repo` directory.
+to unpack the repo in your `~/.ceylon/repo` directory.
 
 Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/ws/build/repo.tgz in your home directly
 
