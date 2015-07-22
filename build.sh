@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
 
+# Clone repos
+git clone --depth 1 git@github.com:ceylon/ceylon-dist.git
+git clone --depth 1 git@github.com:ceylon/ceylon-ide-common.git
+git clone --depth 1 git@github.com:ceylon/ceylon-ide-eclipse.git
+git clone --depth 1 git@github.com:ceylon/ceylon-sdk.git
+git clone --depth 1 git@github.com:ceylon/ceylon.formatter.git
+
 # Ceylon repo
 CEYLON_REPO=`pwd`/repo
 rm -rf $CEYLON_REPO
