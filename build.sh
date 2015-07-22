@@ -11,7 +11,7 @@ if [ ! -d ".ceylon" ];
 then
     mkdir ".ceylon"
 fi
-echo "[repository \"USER\"]\nurl=$CEYLON_REPO" >.ceylon/config
+printf '%s\n%s\n' '[repository "USER"]' "url=$CEYLON_REPO" >.ceylon/config
 
 # Build
 CEYLON_PATH=`pwd`/ceylon-dist/dist/bin
