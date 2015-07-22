@@ -1,11 +1,20 @@
 #!/bin/bash
 set -e
 
-# Build
-CEYLON_PATH=`pwd`/ceylon-dist/dist/bin
+# Ceylon repo
 CEYLON_REPO=`pwd`/repo
 rm -rf $CEYLON_REPO
 mkdir $CEYLON_REPO
+
+# Ceylon config
+if [ ! -d ".ceylon" ];
+then
+    mkdir ".ceylon"
+fi
+echo "[repository \"USER\"]\nurl=$CEYLON_REPO" >.ceylon/config
+
+# Build
+CEYLON_PATH=`pwd`/ceylon-dist/dist/bin
 (cd ceylon-dist;ant setup clean publish-all ide-quick)
 (cd ceylon-sdk;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)
 (cd ceylon.formatter;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)

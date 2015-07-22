@@ -10,6 +10,7 @@ ceylon-module-resolver
 ceylon-js
 ceylon-runtime
 ceylon-spec
+.ceylon
 .extract
 .DS_Store
 target
