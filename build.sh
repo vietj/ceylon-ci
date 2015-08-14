@@ -7,6 +7,7 @@ git clone --depth 1 https://github.com/ceylon/ceylon-ide-common.git
 git clone --depth 1 https://github.com/ceylon/ceylon-ide-eclipse.git
 git clone --depth 1 https://github.com/ceylon/ceylon-sdk.git
 git clone --depth 1 https://github.com/ceylon/ceylon.formatter.git
+git clone --depth 1 https://github.com/rohitmohan96/java-to-ceylon-converter.git
 
 # Ceylon repo
 CEYLON_REPO=`pwd`/repo
@@ -26,6 +27,7 @@ CEYLON_PATH=`pwd`/ceylon-dist/dist/bin
 (cd ceylon-sdk;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)
 (cd ceylon.formatter;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)
 (cd ceylon-ide-common;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)
+(cd java-to-ceylon-converter;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)
 (cd ceylon-ide-eclipse;mvn clean install -DskipTests)
 
 # Package
