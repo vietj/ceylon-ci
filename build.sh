@@ -23,7 +23,7 @@ printf '%s\n%s\n' '[repository "USER"]' "url=$CEYLON_REPO" >.ceylon/config
 
 # Build
 CEYLON_PATH=`pwd`/ceylon-dist/dist/bin
-(cd ceylon-dist;ant setup clean publish-all ide-quick)
+(cd ceylon-dist;ant setup clean publish ide-quick)
 (cd ceylon-sdk;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)
 (cd ceylon.formatter;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)
 (cd ceylon-ide-common;ant clean publish ide-quick -Ddist.bin.dir=$CEYLON_PATH -Dceylon.repo.dir=$CEYLON_REPO)
