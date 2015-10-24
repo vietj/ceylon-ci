@@ -19,12 +19,12 @@ That's the base Ceylon distrib
 Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/lastSuccessfulBuild/artifact/build/ceylon-dist.tgz somewhere and add the unpacked
 bin directory to your path
 
-### Ceylon SDK
+### Ceylon repository
 
 Normally these are downloaded from a repository, however there is no repository for the master, so you need
 to unpack the repo in your `~/.ceylon/repo` directory.
 
-Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/lastSuccessfulBuild/artifact/build/repo.tgz in your home directly
+Unpack https://vietj.ci.cloudbees.com/job/ceylon-daily/lastSuccessfulBuild/artifact/build/repo.tgz in `~/.ceylon/repo` directly
 
 ### Ceylon Eclipse IDE plugin
 

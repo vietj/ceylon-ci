@@ -36,11 +36,8 @@ rm -rf $BUILD_DIR
 mkdir $BUILD_DIR
 mkdir $BUILD_DIR/ceylon
 cp -r ceylon-dist/dist/* $BUILD_DIR/ceylon
-mkdir $BUILD_DIR/.ceylon
-mkdir $BUILD_DIR/.ceylon/repo
-cp -r repo $BUILD_DIR/.ceylon/repo
 mkdir $BUILD_DIR/eclipse-site
 cp -r ceylon-ide-eclipse/site/target/repository $BUILD_DIR/eclipse-site
 (cd build;tar -cvzf $BUILD_DIR/ceylon-dist.tgz ceylon)
-(cd build;tar -cvzf $BUILD_DIR/repo.tgz .ceylon)
+(cd repo;tar -cvzf $BUILD_DIR/repo.tgz *)
 (cd build;tar -cvzf $BUILD_DIR/eclipse-site.tgz eclipse-site)
