@@ -1,5 +1,6 @@
 repo
 build
+ceylon
 ceylon-*
 ceylon.*
 .ceylon
